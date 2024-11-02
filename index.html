@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Story of Halloween</title>
+  <link rel="stylesheet" href="output.css">
+  <link rel="icon" type="image/png" href="Premium_Vector___Pumkin_cartoon_vector_illustration-removebg-preview.png">
+  <style>
+@font-face {
+    font-family: 'Hell';
+    src: url('SpookyOkey.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Heaven';
+  src: url('HellghostRough-Regular.ttf') format('truetype');
+}
+
+.my-custom-orange-text {
+    color: orange; 
+}
+
+body {
+  overflow-x: hidden;
+  animation: fadeIn 1s ease-in-out forwards;
+  font-size: 25px; 
+}
+ p {
+   font-family: 'Hell', sans-serif;
+  animation: slideIn 1s ease-in-out forwards;
+  opacity: 0;
+  font-size: 22px; 
+}
+h2 {
+   font-family: 'Heaven', sans-serif;
+  animation: slideIn 1s ease-in-out forwards;
+  opacity: 1;
+  font-size: 30px; 
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  background-color: rgba(21, 0, 25, 0.6);
+  color: white;
+  padding: 20px;
+  animation: fadeInUp 0.8s ease-in-out forwards;
+  opacity: 0;
+  margin-bottom: 20px;
+ 
+}
+.card img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 0.5rem;
+}
+.card h2 {
+  margin: 0;
+  padding-bottom: 10px; /* Adds space below the header */
+  font-size: 1.9rem;
+}
+.header {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 400px;
+      background-image: url('4183289.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    } 
+    .symbol-image {
+  position: absolute;
+  width: 400px;
+  height: auto;
+  animation: spooky 3s infinite; 
+}
+
+.pumpkin-image {
+  position: absolute;
+  top: 30%;
+  right: 30%;
+  transform: translate(-50%, -50%);
+  height: auto; 
+  width: auto; 
+  max-height: 250px; 
+  max-width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 1); 
+  z-index: 1; 
+ animation: bounce 2s infinite; 
+}
+.pumpkin-imagee {
+  position: absolute;
+  top: 30%;
+  right: 4%;
+  transform: translate(-50%, -50%);
+  height: auto; 
+  width: auto; 
+  max-height: 250px;
+  max-width: 250px; 
+  z-index: 1; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+ animation: bounce 2s infinite; 
+}
+.pumpkin-imageee {
+  position: absolute;
+  top: 30%;
+  right: 15%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: auto;  
+  max-height: 250px; 
+  max-width: 250px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+  z-index: 1; 
+ animation: bouncee 2s infinite; 
+}
+.pumpkin-imageeee {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  transform: translate(-25%, -50%);
+  height: auto; 
+  width: auto;  
+  max-height: 500px;
+  max-width: 250px; 
+  z-index: 1; 
+ animation: bouncee 2s infinite; 
+}
+.pumpkin-imageeeee {
+  position: absolute;
+  top: 4%;
+  right: 2%;
+  transform: translate(-50%, -50%);
+  height: auto; 
+  width: auto;  
+  max-height: 500px;
+  max-width: 250px;  
+  z-index: 1; 
+ animation: shake 2s infinite;
+}
+.tata {
+  position: absolute;
+  top: 24%;
+  right: 17%;
+  transform: translate(-50%, -50%);
+  height: auto; 
+  width: auto;  
+  max-height: 500px; 
+  max-width: 250px;  
+  z-index: 1; 
+ animation: shake 2s infinite; 
+}
+.pumpkin-imageeeeee {
+  position: absolute;
+  top: -2%;
+  right: 34%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: auto; 
+  max-height: 500px; 
+  max-width: 250px;  
+  z-index: 1; 
+ animation: shake 2s infinite;
+}
+.hi{
+  position: absolute;
+  top: 65%;
+  right: 16%;
+  transform: translate(-50%, -50%);
+  height: auto; 
+  width: auto;  
+  max-height: 500px;
+  max-width: 250px;  
+  z-index: 1; 
+ animation: rotate-zoom  2s infinite; 
+}
+.bye {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  transform: translate(-50%, -50%);
+  height: auto; 
+  width: auto; 
+  max-height: 250px; 
+  max-width: 250px;  
+  z-index: 1; 
+ animation: fall 2s ease-in-out forwards;
+}
+.bye1 {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: auto; 
+  max-height: 250px; 
+  max-width: 250px;  
+  z-index: 1; 
+ animation: fall 2s ease-in-out forwards; 
+}
+.hello {
+    position: absolute; 
+            width: auto; 
+            height: auto; 
+            animation: fly 4s ease-in-out forwards;
+        }
+.card:nth-child(odd) { flex-direction: row; }
+.card:nth-child(even) { flex-direction: row-reverse; }
+
+.btn {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+}
+.btn:hover {
+  background-color: #ffbb00;
+  transform: scale(1.05);
+}
+footer {
+  background-image: url('1.jpg'); 
+  background-size: cover;                            /* Cover the entire footer */
+  background-position: center;  
+  background-repeat: no-repeat;  
+  color:#000000;
+  animation: fadeIn 1s ease-in-out forwards;
+  opacity: 0;
+  font-size: 28px;
+  text-shadow: 3px 3px 5px rgb(102, 102, 102);
+}
+    .header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 750px;
+  background-image: url('4183289.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+@keyframes spooky {
+  0% {
+    transform: scale(1) rotate(0deg); 
+  }
+  25% {
+    transform: scale(1.1) rotate(5deg);
+  }
+  50% {
+    transform: scale(1) rotate(-5deg); 
+  }
+  75% {
+    transform: scale(1.1) rotate(5deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg); 
+  }
+}
+@keyframes fly {
+    0% {
+        transform: translate(-150px, 0) rotate(0deg);
+        opacity: 1; 
+    }
+    25% {
+        transform: translate(0, -50px) rotate(15deg); 
+        opacity: 1; 
+    }
+    50% {
+        transform: translate(150px, -30px) rotate(30deg); 
+    }
+    100% {
+        transform: translate(100vw, 0) rotate(0deg); 
+    }
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100vh); 
+    opacity: 0; 
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(80vh); 
+  }
+  100% {
+    transform: translateY(0); 
+    animation: bounce 0.5s ease; 
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); 
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-5px); 
+  }
+}
+@keyframes bouncee {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); 
+  }
+  40% {
+    transform: translateY(-20px);        
+  }
+  60% {
+    transform: translateY(-50px);        
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0, 0); 
+  }
+  20% {
+    transform: translate(-5px, -5px);     
+  }
+  40% {
+    transform: translate(5px, 5px);       
+  }
+  60% {
+    transform: translate(-5px, -5px)       
+  }
+  80% {
+    transform: translate(5px, 5px);         
+  }
+  100% {
+    transform: translate(0, 0);  
+  }
+}
+@keyframes rotate-zoom {
+  0% {
+    transform: scale(1) rotate(0deg); 
+    
+  }
+  25% {
+    transform: scale(1.1) rotate(5deg);
+    
+  }
+  50% {
+    transform: scale(1.2) rotate(-5deg); 
+  
+  }
+  75% {
+    transform: scale(1.1) rotate(5deg); 
+  }
+  100% {
+    transform: scale(1) rotate(0deg); 
+  }
+}
+    
+@keyframes slideDown {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes slideIn {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+@keyframes fadeInUp {
+  0% { transform: translateY(50px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+/* Container to hold the perspective for a 3D effect */
+.card-container {
+  perspective: 600px;
+  display: flex;
+  justify-content: center; /* Center the card horizontally */
+}
+
+/* Card styling with full-width background and flip animation */
+.cardd {
+  width: 100vw; /* Full viewport width to extend background to both sides */
+  max-width: 100%; /* Prevent overflow */
+  height: 400px; /* Set a fixed height */
+  background-color: rgb(255, 166, 0);
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* Space out elements inside */
+  overflow: hidden;
+  border-radius: 0.5rem;
+  color: white;
+  flex-direction: column; /* Stack text and image vertically */
+  transform-style: preserve-3d;
+  animation: placeAnimation 0.8s ease-in-out, zoomInOut 2s ease-in-out infinite; /* Initial placing effect and zoom effect */
+  position: relative;
+  margin: 10px 0; /* Optional margin for spacing between elements */
+}
+
+
+.cardd h2 {
+  margin: 0;
+  padding-bottom: 10px; /* Adds space below the header */
+  font-size: 1.5rem;
+}
+
+/* Description text styling for spacing */
+.cardd p {
+  margin: 0;
+  padding-top: 10px; /* Adds space above the description */
+  font-size: 1.2rem;
+}
+
+/* Image styling with laughing animation */
+.cardd img {
+  max-width: 300px; /* Set a max width to keep the image manageable */
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  animation: laugh 0.7s ease-in-out infinite; /* Laughing animation */
+}
+
+/* Keyframes for placing effect */
+@keyframes placeAnimation {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Laughing animation keyframes */
+@keyframes laugh {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Continuous zoom-in and zoom-out keyframes */
+@keyframes zoomInOut {
+  0%, 100% {
+    transform: scale(1); /* Normal size */
+  }
+  50% {
+    transform: scale(1.05); /* Slight zoom-in */
+  }
+}
+
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+  <header class="header">
+    <img src="—Pngtree—spooky and playful 3d halloween_16744552.png" alt="Halloween Symbol" class="symbol-image">
+    <img src="unique_coloring_page-removebg-preview.png" alt="Pumpkin" class="bye"/>
+    <img src="Moldes_de_bruxa_para_Halloween_-_Como_fazer_em_casa-removebg-preview.png" alt="Pumpkin" class="hello"/>
+    <img src="_Cartoon_Ghost_-_Going_Boo___Sticker_for_Sale_by_DesignWolf-removebg-preview.png" alt="Pumpkin" class="bye1"/>
+  </header>
+  <main class="flex flex-col items-center p-8 space-y-8">
+    <section class="card w-full max-w-lg shadow-lg">
+      <div class="card-body">
+        <h2 class="card-title my-custom-orange-text">Why do we call it Halloween?</h2>
+        <p>November 1 is All Saint’s Day in the Christian church. October 31 was known as All Hallows E’en, which was shortened to Halloween.</p>
+        <button class="btn btn-outline btn-warning mt-4"  onclick="window.open('https://www.history.com/topics/halloween/history-of-halloween', '_blank')">More</button>
+      </div>
+      <img src="5893899.jpg" alt="Why do we call it Halloween?">
+      <img src="download__3_-removebg-preview.png" alt="Pumpkin" class="pumpkin-imageeeeee"/>
+      <img src="Happy_Halloween_Text_Banner__Vector-removebg-preview.png" alt="Pumpkin" class="hi"/>
+      <img src="Scream_Sticker___Scream-removebg-preview (1).png" alt="Pumpkin" class="pumpkin-imageeeee"/>
+    </section>
+    <section class="card w-full max-w-lg shadow-lg">
+      <div class="card-body">
+        <h2 class="card-title my-custom-orange-text">When did Halloween start?</h2>
+        <p>The holiday traces back to a Celtic festival called Samhain. It celebrated the end of the harvest and kicked off the new year. People believed it was when the veil between the worlds of the living and the dead was at its thinnest, and spirits roamed the land.</p>
+        <button class="btn btn-outline btn-warning mt-4" onclick="window.open('https://www.britannica.com/story/why-do-we-celebrate-halloween', '_blank')">More</button>
+      </div>
+      <img src="5918080.jpg" alt="When did Halloween start?">
+      <img src="A_black_and_white_poster_of_a_halloween_theme_with_a_pumpkin_and_a_cat_on_it___Premium_AI-generated_image-removebg-preview.png" alt="Pumpkin" class="pumpkin-imageeee"/>
+    </section>
+    <section class="card w-full max-w-lg shadow-lg">
+      <div class="card-body">
+        <h2 class="card-title my-custom-orange-text">Why do we carve pumpkins?</h2>
+        <p>The Irish carved scary faces onto turnips to frighten away ghouls. In America, the tradition lives on with pumpkins instead of turnips. The name jack-o'-lantern comes from a story of a clever man who tricked the devil out of collecting his soul.</p>
+        <button class="btn btn-outline btn-warning mt-4" onclick="window.open('https://www.britannica.com/story/why-do-we-carve-pumpkins-at-halloween', '_blank')">Find Out More</button>
+      </div>
+      <img src="4287618.jpg" alt="Why do we carve pumpkins?">
+      <img src="Halloween_Jack_O__Lantern_Clipart__Scary_Pumpkin_Cartoon__Illustration__Vector__Chibi__Kawaii__Scrapbooking__Eps__Commercial_Use__Printable_-_Etsy-removebg-preview.png" alt="Why do we carve pumpkins?" class="tata"/>
+    </section>
+    <section class="card w-full max-w-lg shadow-lg">
+      <div class="card-body">
+        <h2 class="card-title my-custom-orange-text">Why do we trick or treat?</h2>
+        <p>In Britain, poor people went begging, receiving treats called “soul cakes” in exchange for a promise to pray for the dead. Americans adopted the tradition, asking for candy instead.</p>
+        <button class="btn btn-outline btn-warning mt-4" onclick="window.open('https://www.history.com/news/halloween-trick-or-treating-origins', '_blank')">Discover More</button>
+      </div>
+      <img src="gce1_nt9x_210803.jpg" alt="Why do we trick or treat?">
+      <img src="7_212_Cartoon_Halloween__Stock_Photos__High-Res_Pictures__and_Images-removebg-preview.png"alt="Pumpkin" class="pumpkin-imageeee"/>
+    </section>
+    <section class="card w-full max-w-lg shadow-lg">
+      <div class="card-body">
+        <h2 class="card-title my-custom-orange-text">Why do we dress up in costumes?</h2>
+        <p>By 1000 A.D., Christians honored the dead on All Souls' Day, dressing up as saints, angels, and devils.</p>
+        <button class="btn btn-outline btn-warning mt-4" onclick="window.open('https://www.psychologytoday.com/intl/blog/the-science-behind-behavior/201510/should-you-wear-costume-halloween', '_blank')">More Info</button>
+      </div>
+      <img src="halloween-haunted-landscape-illustration.jpg" alt="Why do we dress up in costumes?">
+      <img src="951814312.jpg" alt="Pumpkin" class="pumpkin-image"/>
+      <img src="95181431.jpg" alt="Pumpkin" class="pumpkin-imagee"/>
+      <img src="12.jpg" alt="Pumpkin" class="pumpkin-imageee"/>
+    </section>
+    <div class="card w-full max-w-lg shadow-lg">
+  <div class="cardd">
+    <h2>This year.. </h2>
+    <img src="download (8).jpg" alt="Card Image">
+    <h2>  MY HALLOWEEN COSTUME</h2>
+  </div>
+</div>
+  </main>
+<footer class="flex flex-col items-center bg-blue-500 text-yellow-500 py-8">
+    <h2 class="text-lg mt-4">🦇 Happy Halloween! Stay spooky!🦇</h2>
+    <h2 class="text-lg mt-4">Sachin Ram ES (@sachinram6363@gmail.com)</h2>
+    
+</footer>
+
+
+</body>
+</html>
